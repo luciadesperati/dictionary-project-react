@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Hello
+        <div>
+          Hello
+          </div>
+        <div className='btn btn-danger text-white'>Button</div>
       </header>
     </div>
   );
