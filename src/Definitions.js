@@ -1,16 +1,15 @@
 import React from "react";
 import SingleDefinition from "./SingleDefinition";
+import "./Definitions.css";
 
 export default function Definitions(props) {
   console.log(props.meaning.partOfSpeech);
 
   return (
     <div>
-      <p className="mt-5">
-        <strong>{props.meaning.partOfSpeech}</strong>
-      </p>
-      
-      <SingleDefinition definition={props.meaning.definitions[0]} />
+      <p className="part-of-speech">{props.meaning.partOfSpeech}</p>
+
+      <SingleDefinition meaning={props.meaning} />
 
       {/* {props.meaning.definitions.map(function (definition, index) {
         return (

@@ -1,0 +1,32 @@
+definitions {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.synonyms-title {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.antonyms-title {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+li {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+}

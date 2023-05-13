@@ -1,0 +1,18 @@
+.search-result {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.word {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.section-title {
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+}

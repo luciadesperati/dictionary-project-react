@@ -4,14 +4,25 @@ import DictionarySearch from "./DictionarySearch";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <header className="App-header">
-          <main>
-            <DictionarySearch />
-          </main>
-        </header>
-        <footer className="text-center">coded by Lucia Desperati</footer>
-      </div>
+      <body>
+        <div className="container">
+          <DictionarySearch />
+        </div>
+
+        <footer className="footer mt-auto text-center py-3">
+          <span className="footer-text">
+            coded by{" "}
+            <a
+              href="https://luciadesperati.com"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-link"
+            >
+              Lucia Desperati
+            </a>
+          </span>
+        </footer>
+      </body>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Antonym(props) {
-  console.log(`Antonym ${props.antonym}`);
+  // console.log(`Antonym ${props.antonym}`);
 
   return (
     <div>

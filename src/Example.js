@@ -1,4 +1,5 @@
 import React from "react";
+import "./Example.css";
 
 export default function Example(props) {
   // console.log(`Shoew examples ${props.definition.example}`);
@@ -8,8 +9,8 @@ export default function Example(props) {
   } else {
     return (
       <div>
-        <em>example</em>
-        <p>{props.definition.example}</p>
+        <p className="example-title">example</p>
+        <p className="example-text">{props.definition.example}</p>
       </div>
     );
   }
