@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./DictionarySearch.css";
+import SearchResult from "./SearchResult";
 
 export default function DictionarySearch() {
   let [word, setWord] = useState(" ");
+  let [searchResults, setSearchResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data);
+    // console.log(response.data[0].meanings[0].definitions[0].definition);
+    setSearchResults(response.data[0]);
   }
 
   function handleSearch(event) {
@@ -28,6 +31,7 @@ export default function DictionarySearch() {
       <form onSubmit={handleSearch}>
         <input type="search" autoFocus={true} onChange={handleChange} />
       </form>
+      <SearchResult definition={searchResults} />
     </div>
   );
 }
