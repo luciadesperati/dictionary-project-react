@@ -1,5 +1,6 @@
 import React from "react";
 import Definitions from "./Definitions";
+import Phonetics from "./Phonetics";
 
 export default function SearchResult(props) {
   console.log(props.definition);
@@ -7,7 +8,13 @@ export default function SearchResult(props) {
     return (
       <div className="search-result">
         <h1>{props.definition.word}</h1>
-        <p className="phonetics">{props.definition.phonetics[0].text}</p>
+        {props.definition.phonetics.map(function (phonetic, index) {
+          return (
+            <div key={index}>
+              <Phonetics phonetic={phonetic} />
+            </div>
+          );
+        })}
         <h2 className="text-uppercase">Definitions</h2>
         {props.definition.meanings.map(function (meaning, index) {
           return (
