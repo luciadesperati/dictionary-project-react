@@ -10,7 +10,7 @@ function App() {
 
       <footer className="footer mt-auto text-center py-3">
         <span className="footer-text">
-          coded by{" "}
+          Coded by{" "}
           <a
             href="https://luciadesperati.com"
             target="_blank"
@@ -18,6 +18,15 @@ function App() {
             className="footer-link"
           >
             Lucia Desperati
+          </a>
+          ,{" "}
+          <a
+            href="https://github.com/luciadesperati/dictionary-project-react"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-link"
+          >
+            open-sourced.
           </a>
         </span>
       </footer>
