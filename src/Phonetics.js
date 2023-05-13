@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import "./Phonetics.css";
 
 export default function Phonetics(props) {
-  console.log(props.phonetic);
+  // console.log(props.phonetic);
   return (
     <div className="d-flex align-items-center">
       <p className="phonetics mb-0">{props.phonetic.text}</p>
