@@ -4,7 +4,7 @@ import Synonym from "./Synonym";
 import Antonym from "./Antonym";
 
 export default function SingleDefinition(props) {
-  console.log(props.definition.synonyms);
+  // console.log(props.definition.synonyms);
 
   return (
     <div className="container">

@@ -3,7 +3,7 @@ import Definitions from "./Definitions";
 import Phonetics from "./Phonetics";
 
 export default function SearchResult(props) {
-  console.log(props.definition);
+  // console.log(props.definition);
   if (props.definition) {
     return (
       <div className="search-result">
